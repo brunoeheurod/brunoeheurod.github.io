@@ -1,128 +1,231 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>BrunoRodrigues</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-    rel="stylesheet">
-  <title>BrunoRodrigues</title>
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+        background-color: #e5e5e5;
+        color: #14213d;
+        text-align: center;
+        font-weight: 600;
+        line-height: 16px;
+      }
 
-  <style>
-    body {
+      img {
+        border-radius: 50%;
+        width: 200px;
+      }
 
-      font-family: 'Courier New', Courier, monospace;
-      background-color: #E5E5E5;
-      color: #14213D;
-      text-align: center;
-      font-weight: 600;
-      line-height: 24px;
-    }
+      h1 {
+        font-family: "Roboto Mono", monospace;
+        border: solid #14213d;
+        padding: 20px;
+        border-radius: 25px;
+      }
 
-    h1 {
-      font-family: 'Roboto Mono', monospace;
-    }
+      h2 {
+        border: solid #14213d;
+        border-radius: 20px;
+      }
 
-    strong {
+      h3 {
+        border: solid #14213d;
+        border-radius: 20px;
+        padding: 5px;
+      }
 
-      color: #ffffff;
-      background-color: #14213D;
-      border: none;
-      padding: 1px 10px;
-      text-align: center;
-      text-decoration: none;
-      font-size: 16px;
-      border-radius: 20px;
-    }
+      strong {
+        color: #ffffff;
+        background-color: #14213d;
+        border: none;
+        padding: 1px 10px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 20px;
+      }
 
-    .Font {
+      li {
+        list-style: none;
+        display: table;
+      }
 
-      line-height: 30px;
-    }
+      .Indice {
+        text-align: left;
+        line-height: 34px;
+      }
+
+      .Skills {
+        display: table;
+        font-size: larger;
+        border: solid 2px #14213d;
+        border-radius: 25px;
+        padding: 5px 20px;
+      }
+
+      .Font {
+        line-height: 30px;
+      }
+
+      .Button {
+        text-decoration: none;
+        background-color: #fca311;
+        color: #ffffff;
+        padding: 5px 20px 5px 20px;
+        border-radius: 5px;
+      }
+
+      .image-cropper {
+        background-color: #14213d;
+        border-radius: 25px;
+        padding: 50px 550px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="image-cropper">
+      <img
+        id="Perfil"
+        class="Border"
+        src="FotoAtual.jpeg"
+        alt="Foto Atual Bruno Rodrigues"
+        width="300px"
+      />
+    </div>
+    <h1>Bruno Emanuel Heusi Rodrigues</h1>
+
+    <h3><em>Índice</em></h3>
+    <ul class="Indice">
+      <li>
+        <a class="Button" href="#s1"><em>Sobre Mim</em></a>
+      </li>
+      <li>
+        <a class="Button" href="#s2"><em>Minhas Skills</em></a>
+      </li>
+      <li>
+        <a class="Button" href="#s3"
+          ><em>Minha Recomendação Pessoal de Blog</em></a
+        >
+      </li>
+    </ul>
+
+    <h2 id="s1" class="Font"><em>Sobre Mim </em></h2>
+    <p class="Font">
+      Olá! Eu sou o <strong>Bruno Rodrigues</strong>,
+      <strong>brasileiro</strong>
+      natural de
+      <strong>Brasília, Distrito Federal</strong><br />
+      atualmente estudando
+      <strong
+        >Desenvolvimento Web pela Trybe e Banco de Dados pela FIAP.
+      </strong>
+      <br />
+      Eu gosto de
+      <strong>Codar</strong> em linguagens novas e C foi onde tudo começou
+    </p>
+
+    <h2 id="s2"><em>Minhas Skills</em></h2>
+    <ul>
+      <li class="Skills">Git&GitHub<br /></li>
+
+      <li><br />Iniciante<br /><br /></li>
+
+      <li class="Skills">C</li>
+
+      <li><br />Intermediário<br /><br /></li>
+
+      <li class="Skills">HTML</li>
+
+      <li><br />Aprendendo<br /><br /></li>
+
+      <li class="Skills">Python</li>
+
+      <li><br />Aprendendo<br /><br /></li>
+
+      <li class="Skills">Programar</li>
+
+      <li><br />Intermediário<br /><br /></li>
+
+      <li class="Skills">
+        E apaixonado por
+
+        <strong>Inglês </strong>
+      </li>
+
+      <li><br />Avançado<br /><br /></li>
+    </ul>
+
+    <h2 id="s3"><em>Minha Recomendação Pessoal de Blog</em></h2>
+    <a class="Button" href="https://diolinux.com.br/editorial" target="_blank"
+      >Blog do DIOLINUX</a
+    >
+    <p>
+      Grande parte do que aprendi sobre Linux, mais especificamente Ubuntu, foi
+      através dos tutoriais feitos por essa equipe incrível!
+    </p>
+    <pre>
 
 
-    .Border {
-
-      background-color: #14213D;
-      border-radius: 20px;
-      padding: 50px 450px;
-    }
-
-    .Button {
-      text-decoration: none;
-      background-color: #FCA311;
-      color: #ffffff;
-      padding: 10px 20px 10px 20px;
-      border-radius: 5px;
-      line-height: 40px;
-
-    }
-  </style>
-
-</head>
-
-<body>
-
-  <img id="Perfil" class="Border" src="FotoAtual.jpeg" alt="Foto Atual Bruno Rodrigues" width="300px">
-
-  <h1>Bruno Emanuel Heusi Rodrigues</h1>
-
-  <h3><em>Índice</em> </h3>
-  <ul>
-    <li><a class="Button" href="#s1"><em>Sobre Mim</em></a></li>
-    <li><a class="Button" href="#s2"><em>Minhas Skills</em></a></li>
-    <li><a class="Button" href="#s3"><em>Minha Recomendação Pessoal de Blog</em></a></li>
-
-  </ul>
 
 
-  <h2 id="s1" class="Font"><em>Sobre Mim </em> </h2>
-  <p class="Font">Olá! Eu sou o
-    <strong>Bruno Rodrigues</strong>,
-    <strong>brasileiro</strong>
-    natural de
-    <strong>Brasília, Distrito Federal</strong><br>
-    atualmente estudando
-    <strong>Desenvolvimento Web pela Trybe e Banco de Dados pela FIAP. </strong> <br>
-    Eu gosto de
-    <strong>Codar</strong> em linguagens novas e C foi onde tudo começou
-  </p>
 
-  <h2 id="s2"><em>Minhas Skills</em> </h2>
-  <ul>
-    <li>Git&GitHub
-      <br>Iniciante<br><br>
-    </li>
-    <li>C
-      <br>Intermediário<br><br>
-    </li>
-    <li>HTML
-      <br>Aprendendo<br><br>
-    </li>
-    <li>Python
-      <br>Aprendendo<br><br>
-    </li>
-    <li>Programar
-      <br>Intermediário<br><br>
-    </li>
 
-    <li>E apaixonado por
-      <strong>Inglês </strong>
-      <br>Avançado<br><br>
-    </li>
-  </ul>
 
-  <h2 id="s3"><em>Minha Recomendação Pessoal de Blog</em> </h2>
-  <a class="Button" href="https://diolinux.com.br/editorial" target="_blank">Blog do DIOLINUX</a>
-  <p>Grande parte do que aprendi sobre Linux,
-    mais especificamente Ubuntu, foi através dos tutoriais feitos
-    por essa equipe incrível!</p>
 
-  <a class="Button" href="#Perfil">Clique aqui para voltar a Minha Foto.</a>
-</body>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </pre>
+    <a class="Button" href="#Perfil">Clique aqui para voltar a Minha Foto.</a>
+  </body>
 </html>
